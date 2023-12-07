@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link
+        href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- Nice Select CSS -->
+    <link rel="stylesheet" href="../css/nice-select.css">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <!-- icofont CSS -->
+    <link rel="stylesheet" href="../css/icofont.css">
+    <!-- Slicknav -->
+    <link rel="stylesheet" href="../css/slicknav.min.css">
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="../css/owl-carousel.css">
+    <!-- Datepicker CSS -->
+    <link rel="stylesheet" href="../css/datepicker.css">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="../css/animate.min.css">
+    <!-- Magnific Popup CSS -->
+    <link rel="stylesheet" href="../css/magnific-popup.css">
+
+    <!-- Medipro CSS -->
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../login/student-login.css">
+    <title>User Registration</title>
+
+
+    <!-- Header Area -->
+    <header class="header">
+
+        <!-- Header Inner -->
+        <div class="header-inner">
+            <div class="container">
+                <div class="inner">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-12">
+                            <!-- Start Logo -->
+                            <div class="logo">
+                                <a href="../index.html"><img src="../img/logo.png" alt="#"></a>
+                            </div>
+                            <!-- End Logo -->
+                            <!-- Mobile Nav -->
+                            <div class="mobile-nav"></div>
+                            <!-- End Mobile Nav -->
+                        </div>
+                        <div class="col-lg-7 col-md-9 col-12">
+                            <!-- Main Menu -->
+                            <div class="main-menu">
+                                <nav class="navigation">
+                                    <ul class="nav menu">
+
+                                        <li><a href="student-login.html">Student</a></li>
+                                        <li><a href="tpo-login.html">Admin </a></li>
+
+                                    </ul>
+                                </nav>
+                            </div>
+                            <!--/ End Main Menu -->
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/ End Header Inner -->
+    </header>
+    <!-- End Header Area -->
+</head>
+
+<body>
+    <div class='container'>
+        <div class='panel panel-primary dialog-panel'>
+            <div class='panel-heading'>
+                <h5>Register as a Student</h5>
+            </div>
+            <div class='panel-body'>
+                <form class='form-horizontal' role='form' id="RegForm">
+                    <div class='form-group'>
+                        <label class='control-label col-md-2 col-md-offset-2' for='Semester'>Semester</label>
+                        <div class='col-md-2'>
+                            <select class='form-control' id='Semester'>
+                                <option>5</option>
+                                <option>7</option>
+
+                            </select>
+                        </div>
+                    </div>
+                    <div class='form-group'>
+                        <label class='control-label col-md-2 col-md-offset-2' for='title'>Name</label>
+                        <div class='col-md-8'>
+                            <div class='col-md-2'>
+                                <div class='form-group internal'>
+                                    <select class='form-control' id='title'>
+                                        <option>Mr</option>
+                                        <option>Ms</option>
+                                        <option>Mrs</option>
+                                        <option>Miss</option>
+                                        <option>Dr</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class='col-md-3 indent-small'>
+                                <div class='form-group internal'>
+                                    <input class='form-control' id='first_name' placeholder='First Name' type='text'>
+                                </div>
+                            </div>
+                            <div class='col-md-3 indent-small'>
+                                <div class='form-group internal'>
+                                    <input class='form-control' id='last_name' placeholder='Last Name' type='text'>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class='form-group'>
+                        <label class='control-label col-md-2 col-md-offset-2' for='email'>Email</label>
+                        <div class='col-md-6'>
+                            <div class='form-group'>
+                                <div class='col-md-11'>
+                                    <input class='form-control' id='email' placeholder='E-mail' type='text'>
+                                </div>
+                            </div>
+                        </div>
+
+                        <label class='control-label col-md-2 col-md-offset-2' for='collegeemail'>College Email</label>
+                        <div class='col-md-6'>
+                            <div class='form-group'>
+                                <div class='col-md-11'>
+                                    <input class='form-control' id='collegeemail' placeholder='E-mail' type='text'>
+                                </div>
+                            </div>
+                        </div>
+
+                        <label class='control-label col-md-2 col-md-offset-2' for='phone'>Phone</label>
+                        <div class='col-md-6'>
+                            <div class='form-group'>
+                                <div class='col-md-11'>
+                                    <input class='form-control' id='phone' placeholder='Phone: (+91) xxxxxxxxxx'
+                                        type='text'>
+                                </div>
+                            </div>
+                        </div>
+                        <label class='control-label col-md-2 col-md-offset-2' for='rollno'>Registration Number</label>
+                        <div class='col-md-6'>
+                            <div class='form-group'>
+                                <div class='col-md-11'>
+                                    <input class='form-control' id='rollno' placeholder='Roll No.' type='text'>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <label class='control-label col-md-2 col-md-offset-2' for='dob'>Date of Birth</label>
+                    <div class='col-md-6'>
+                        <div class='form-group'>
+                            <div class='col-md-11'>
+                                <input class='form-control' id='dob' placeholder='dd/mm/yyyy' type='text'>
+                            </div>
+                        </div>
+                    </div>
+
+            </div>
+
+            <div class='form-group'>
+
+                <div class="container">
+                    <form class="form-horizontal">
+                        <!-- LinkedIn -->
+                        <div class="form-group">
+                            <label class="control-label col-md-2 col-md-offset-2" for="linkedin">LinkedIn</label>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <div class="col-md-11">
+                                        <input class="form-control" id="linkedin" placeholder="Profile URL" type="text">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- LeetCode -->
+                        <div class="form-group">
+                            <label class="control-label col-md-2 col-md-offset-2" for="leetcode">LeetCode</label>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <div class="col-md-11">
+                                        <input class="form-control" id="leetcode" placeholder="Profile URL" type="text">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Other Profiles (Add More)
+                                <div class="form-group">
+                                    <label class="control-label col-md-2 col-md-offset-2" for="otherProfiles">Other</label>
+                                    <div class="col-md-6">
+                                        <div class="form-group" id="otherProfiles">
+                                            <div class="col-md-11">
+                                                <input class="form-control" name="other[]" placeholder="Profile URL"
+                                                    type="text">
+                                            </div>
+                                        </div>
+                                        <button type="button" class="btn btn-default" onclick="addProfileField()">Add
+                                            More</button>
+                                    </div>
+                                </div>
+                                CV Upload -->
+                        <!-- <div class="form-group">
+                                    <label class="control-label col-md-2 col-md-offset-2" for="cv">Upload CV</label>
+                                    <div class="col-md-6">
+                                        <input type="file" id="cv" name="cv">
+                                    </div>
+                                </div>
+
+                            </form>
+                        </div> -->
+
+
+                        <div class='form-group'>
+                            <div class='col-md-offset-4 col-md-3'>
+                                <button class='btn-lg btn-primary' type='submit'>Create Profile</button>
+                            </div>
+
+                        </div>
+
+                    </form>
+
+
+
+
+                </div>
+
+            </div>
+            <!-- <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+            <script
+                src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/js/bootstrap-datepicker.min.js"></script>
+            <script src="https://davidstutz.github.io/bootstrap-multiselect/js/bootstrap-multiselect.js"></script>
+            -->
+</body>
+
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+    import { getDatabase, ref, get, push, set } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js";
+
+
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+        apiKey: "AIzaSyAOsXRZVwSfEX5IheUhxDTkNAsckRSNSKA",
+        authDomain: "launchpad-19710.firebaseapp.com",
+        databaseURL: "https://launchpad-19710-default-rtdb.firebaseio.com",
+        projectId: "launchpad-19710",
+        storageBucket: "launchpad-19710.appspot.com",
+        messagingSenderId: "918746355476",
+        appId: "1:918746355476:web:b6661159c49846847c1401"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    console.log(app);
+
+    var regFormDB = ref(getDatabase(), "RegForm");
+
+    document.getElementById("RegForm").addEventListener("submit", submitForm);
+    console.log(app);
+
+    function submitForm(e) {
+        e.preventDefault();
+
+        //variables for different fields
+
+
+        var Semester = getElementVal("Semester");
+        var title = getElementVal("title");
+        var first_name = getElementVal("first_name");
+        var last_name = getElementVal("last_name");
+        var email = getElementVal("email");
+
+        var collegeemail = getElementVal("collegeemail");
+        var phone = getElementVal("phone");
+        var rollno = getElementVal("rollno");
+        // var name = getElementVal("dob");
+        var linkedin = getElementVal("linkedin");
+        var leetcode = getElementVal("leetcode");
+        // var name = getElementVal("otherProfiles");
+
+        console.log(Semester, title, first_name, last_name, email, collegeemail, phone, rollno, linkedin, leetcode);
+        saveform(Semester, title, first_name, last_name, email, collegeemail, phone, rollno, linkedin, leetcode);
+
+    }
+
+    const saveform = (Semester, title, first_name, last_name, email, collegeemail, phone, rollno, linkedin, leetcode) => {
+        const newProfileRef = push(regFormDB);
+
+        set(newProfileRef, {
+            Semester: Semester,
+            title: title,
+            first_name: first_name,
+            last_name: last_name,
+            email: email,
+            collegeemail: collegeemail,
+            phone: phone,
+            rollno: rollno,
+            linkedin: linkedin,
+            leetcode: leetcode,
+        }).then(() => {
+        // Redirect to another page after the form is submitted
+        window.location.href = "../index.html"; // Replace with your desired URL
+    });
+    };
+
+    const getElementVal = (id) => {
+        return document.getElementById(id).value;
+    };
+
+
+
+</script>

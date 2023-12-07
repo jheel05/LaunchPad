@@ -1,0 +1,324 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+	<!-- Meta Tags -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="keywords" content="Site keywords here">
+	<meta name="description" content="">
+	<meta name='copyright' content=''>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Title -->
+	<title>Placement Portal</title>
+
+	<!-- Favicon -->
+	<link rel="icon" href="../img/favicon.png">
+
+	<!-- Google Fonts -->
+	<link
+		href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
+		rel="stylesheet">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<!-- Nice Select CSS -->
+	<link rel="stylesheet" href="../css/nice-select.css">
+	<!-- Font Awesome CSS -->
+	<link rel="stylesheet" href="../css/font-awesome.min.css">
+	<!-- icofont CSS -->
+	<link rel="stylesheet" href="../css/icofont.css">
+	<!-- Slicknav -->
+	<link rel="stylesheet" href="../css/slicknav.min.css">
+	<!-- Owl Carousel CSS -->
+	<link rel="stylesheet" href="../css/owl-carousel.css">
+	<!-- Datepicker CSS -->
+	<link rel="stylesheet" href="../css/datepicker.css">
+	<!-- Animate CSS -->
+	<link rel="stylesheet" href="../css/animate.min.css">
+	<!-- Magnific Popup CSS -->
+	<link rel="stylesheet" href="../css/magnific-popup.css">
+
+	<!-- Medipro CSS -->
+	<link rel="stylesheet" href="../css/normalize.css">
+	<link rel="stylesheet" href="../style.css">
+	<link rel="stylesheet" href="../css/responsive.css">
+
+</head>
+
+
+<style>
+    body {
+  font-family: "Open Sans", sans-serif;
+  height: 100vh;
+ background-color: #ddd;
+
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(359deg);
+  }
+}
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  min-height: 100%;
+  padding: 20px;
+  
+}
+
+.login {
+  border-radius: 2px 2px 5px 5px;
+  padding: 10px 20px 20px 20px;
+  width: 90%;
+  max-width: 320px;
+  background: #ffffff;
+  position: relative;
+  padding-bottom: 80px;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
+}
+p.student-login {
+    text-align:  left;
+    font-size: 1.5em;
+    
+    color: #454545;
+    margin-bottom: 20px;
+  }
+.login.loading button {
+  max-height: 100%;
+  padding-top: 50px;
+}
+.login.loading button .spinner {
+  opacity: 1;
+  top: 40%;
+}
+.login.ok button {
+  background-color: #8bc34a;
+}
+.login.ok button .spinner {
+  border-radius: 0;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  height: 20px;
+  animation: none;
+  transform: rotateZ(-45deg);
+}
+.login input {
+  display: block;
+  padding: 15px 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  border: 1px solid #ddd;
+  transition: border-width 0.2s ease;
+  border-radius: 2px;
+  color: #ccc;
+}
+.login input + i.fa {
+  color: #fff;
+  font-size: 1em;
+  position: absolute;
+  margin-top: -47px;
+  opacity: 0;
+  left: 0;
+  transition: all 0.1s ease-in;
+}
+.login input:focus {
+  outline: none;
+  color: #444;
+  border-color: #2196F3;
+  border-left-width: 35px;
+}
+.login input:focus + i.fa {
+  opacity: 1;
+  left: 30px;
+  transition: all 0.25s ease-out;
+}
+.login a {
+  font-size: 0.8em;
+  color: #2196F3;
+  text-decoration: none;
+}
+.login .title {
+  color: #444;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 10px 0 30px 0;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 20px;
+}
+.login button {
+  width: 100%;
+  height: 100%;
+  padding: 10px 10px;
+  background: #2196F3;
+  color: #fff;
+  display: block;
+  border: none;
+  margin-top: 20px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  max-height: 60px;
+  border: 0px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 2px 2px;
+  transform: rotateZ(0deg);
+  transition: all 0.1s ease-out;
+  border-bottom-width: 7px;
+}
+.login button .spinner {
+  display: block;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  border: 4px solid #ffffff;
+  border-top-color: rgba(255, 255, 255, 0.3);
+  border-radius: 100%;
+  left: 50%;
+  top: 0;
+  opacity: 0;
+  margin-left: -20px;
+  margin-top: -20px;
+  animation: spinner 0.6s infinite linear;
+  transition: top 0.3s 0.3s ease, opacity 0.3s 0.3s ease, border-radius 0.3s ease;
+  box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2);
+}
+.login:not(.loading) button:hover {
+  box-shadow: 0px 1px 3px #2196F3;
+}
+.login:not(.loading) button:focus {
+  border-bottom-width: 4px;
+}
+
+footer {
+  display: block;
+  padding-top: 50px;
+  text-align: center;
+  color: #ddd;
+  font-weight: normal;
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.2);
+  font-size: 0.8em;
+}
+footer a, footer a:link {
+  color: #fff;
+  text-decoration: none;
+}
+</style>
+
+
+	<!-- Header Area -->
+	<header class="header">
+
+		<!-- Header Inner -->
+		<div class="header-inner">
+			<div class="container">
+				<div class="inner">
+					<div class="row">
+						<div class="col-lg-3 col-md-3 col-12">
+							<!-- Start Logo -->
+							<div class="logo">
+								<a href="../index.html"><img src="../img/logo.png" alt="#"></a>
+							</div>
+							<!-- End Logo -->
+							<!-- Mobile Nav -->
+							<div class="mobile-nav"></div>
+							<!-- End Mobile Nav -->
+						</div>
+						<div class="col-lg-7 col-md-9 col-12">
+							<!-- Main Menu -->
+							<div class="main-menu">
+								<nav class="navigation">
+									<ul class="nav menu">
+
+										<li><a href="student-login.html">Student</a></li>
+										<li><a href="tpo-login.html">Admin </a></li>
+
+									</ul>
+								</nav>
+							</div>
+							<!--/ End Main Menu -->
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--/ End Header Inner -->
+	</header>
+	<!-- End Header Area -->
+
+<div class="wrapper">
+  
+  <p class="student-login">TPO Login</p>
+    <form class="login">
+      <p class="title">Log in</p>
+      <input type="text" name="login_email" id="login_email" placeholder="Username" autofocus/>
+      <i class="fa fa-user"></i>
+      <input type="password" name="login_password" id="login_password" placeholder="Password" />
+      <i class="fa fa-key"></i>
+      <a href="#">Forgot your password?</a>
+      <button type="button" id="login" name="login">
+        <i class="spinner"></i>
+        <span class="state">Log in</span>
+      </button>
+    </form>
+   
+    </p>
+  </div>
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+    import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+  
+  
+  
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyAOsXRZVwSfEX5IheUhxDTkNAsckRSNSKA",
+      authDomain: "launchpad-19710.firebaseapp.com",
+      projectId: "launchpad-19710",
+      storageBucket: "launchpad-19710.appspot.com",
+      messagingSenderId: "918746355476",
+      appId: "1:918746355476:web:b6661159c49846847c1401"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    console.log(app);
+  
+    const auth = getAuth();
+  
+    document.getElementById("login").addEventListener("click", function() {
+        var email =  document.getElementById("login_email").value;
+        var password = document.getElementById("login_password").value;
+  
+        signInWithEmailAndPassword(auth, email, password)
+        .then((userCredential) => {
+          // Signed in 
+          const user = userCredential.user;
+          console.log(user);
+          alert(user.email+" Login successfully!!!");
+          document.getElementById('logout').style.display = 'block';
+          // ...
+        })
+        .catch((error) => {
+          const errorCode = error.code;
+          const errorMessage = error.message;
+          console.log(errorMessage);
+          alert(errorMessage);
+        });		  		  
+      });
+  
+  </script>
+  
