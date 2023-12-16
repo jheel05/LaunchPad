@@ -76,6 +76,7 @@
                
                     <!-- Add the profile icon with a circular avatar -->
                     <li class="profile-icon"><a href="profile.html"><img src="../img/avatar.jpg" alt="Profile Avatar"></a></li>
+                    <li><button id="logoutButton">Logout</button></li>
                   </ul>
               </nav>
             </div>
@@ -162,5 +163,43 @@
       <a href="#" class="card-button">Learn More</a>
     </div>
   </div>
+
+  <!-- ... (your existing code) ... -->
+<script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+  import { getAuth, signOut } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyAOsXRZVwSfEX5IheUhxDTkNAsckRSNSKA",
+    authDomain: "launchpad-19710.firebaseapp.com",
+    projectId: "launchpad-19710",
+    storageBucket: "launchpad-19710.appspot.com",
+    messagingSenderId: "918746355476",
+    appId: "1:918746355476:web:b6661159c49846847c1401"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  console.log(app);
+
+
+
+  // Get the authentication instance
+  const auth = getAuth();
+
+  // Add an event listener to the logout button
+  document.getElementById("logoutButton").addEventListener("click", function () {
+    // Sign out the user
+    signOut(auth).then(() => {
+      // Redirect the user to the login page after logout
+      window.location.href = '../login/student-login.html';
+    }).catch((error) => {
+      // Handle errors if needed
+      console.error("Logout Error:", error);
+    });
+  });
+</script>
+</body>
+</html>
 
 
